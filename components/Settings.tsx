@@ -1,16 +1,12 @@
 import { IconContext } from 'react-icons';
-import { BsGearWide } from 'react-icons/bs';
-import { CardHolderProps } from './CardHolder';
+import { BsGear } from 'react-icons/bs';
+import { OptionsProps } from './Options';
 
-const Settings = (props: CardHolderProps) => {
-    const changeToggle = () => {
-        console.log('Working');
-    };
-
+const Settings = (props: OptionsProps) => {
     return (
         <div
             className="group bg-rightGreen flex flex-col items-center w-1/3 p-6 shadow-card hover:bg-green-400 active:bg-green-500 transition ease-out duration-250"
-            onClick={changeToggle}
+            onClick={() => props.setToggle(!props.toggle)}
         >
             <IconContext.Provider
                 value={{
@@ -18,7 +14,7 @@ const Settings = (props: CardHolderProps) => {
                         'text-white text-4xl md:text-6xl cursor-pointer transform group-hover:scale-110 transition ease-out duration-250',
                 }}
             >
-                <BsGearWide />
+                <BsGear />
             </IconContext.Provider>
             <p className="text-white font-bold text-xl pt-2 select-none">
                 Configurar

@@ -3,7 +3,9 @@ import Head from 'next/head';
 import { QuestionProps } from '../types/QuestionProps';
 
 const HeadComponent = (props: QuestionProps) => {
-    const headTitle = `Controle de Exercícios (${props.total}/${props.wrong})`;
+    const headTitle = `Controle de Exercícios (${props.total}/${
+        props.total - props.wrong
+    })`;
     return (
         <Head>
             <title>{headTitle}</title>

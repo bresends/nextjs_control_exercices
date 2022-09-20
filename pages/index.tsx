@@ -30,8 +30,16 @@ const Home: NextPage = () => {
                 wrong={wrong}
                 setTotals={setTotal}
                 setWrongs={setWrong}
+                toggle={toggle}
+                />
+            <Options
+                setTotals={setTotal}
+                setWrongs={setWrong}
+                total={total}
+                wrong={wrong}
+                toggle={toggle}
+                setToggle={setToggle}
             />
-            <Options setTotals={setTotal} setWrongs={setWrong} />
         </div>
     );
 };

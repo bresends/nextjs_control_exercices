@@ -1,4 +1,4 @@
 export type QuestionProps = {
-    total?: number;
-    wrong?: number;
+    total: number;
+    wrong: number;
 };
