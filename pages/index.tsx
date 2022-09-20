@@ -3,6 +3,7 @@ import { useState } from 'react';
 import CardHolder from '../components/CardHolder';
 import HeadComponent from '../components/Head';
 import Header from '../components/Header';
+import Options from '../components/Options';
 
 const Home: NextPage = () => {
     const [total, setTotal] = useState(0);
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
                 setTotals={setTotal}
                 setWrongs={setWrong}
             />
+            <Options setTotals={setTotal} setWrongs={setWrong} />
         </div>
     );
 };
