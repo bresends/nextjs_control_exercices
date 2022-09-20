@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useState } from 'react';
-import CardHolder from '../Layouts/CardHolder';
+import CardHolder from '../components/CardHolder';
 import HeadComponent from '../components/Head';
 import Header from '../components/Header';
 

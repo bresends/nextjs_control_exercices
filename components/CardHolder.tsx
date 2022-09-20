@@ -1,9 +1,9 @@
 import React, { Dispatch } from 'react';
 import { QuestionProps } from '../types/QuestionProps';
-import ErrorCard from '../components/ErrorCard';
-import QuestionCard from '../components/QuestionCard';
-import RightButton from '../components/RightButton';
-import WrongButton from '../components/WrongButton';
+import ErrorCard from './ErrorCard';
+import QuestionCard from './QuestionCard';
+import RightButton from './RightButton';
+import WrongButton from './WrongButton';
 
 export interface CardHolderProps extends QuestionProps {
     setTotals: Dispatch<React.SetStateAction<number>>;
@@ -11,6 +11,7 @@ export interface CardHolderProps extends QuestionProps {
 }
 
 const CardHolder = (props: CardHolderProps) => {
+    
     return (
         <div className="bg-darkIndigo shadow-card mt-10 mx-6 flex flex-col md:grid md:grid-cols-2">
             <QuestionCard total={props.total} />
