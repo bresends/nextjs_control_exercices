@@ -11,8 +11,8 @@ const Home: NextPage = () => {
 
     return (
         <div className="container mx-auto">
-            <HeadComponent total={total} wrong={wrong} />
             <Header />
+            <HeadComponent total={total} wrong={wrong} />
             <CardHolder total={total} wrong={wrong} />
         </div>
     );
