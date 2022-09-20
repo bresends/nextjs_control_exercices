@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import CardHolder from '../components/CardHolder';
@@ -27,23 +28,29 @@ const Home: NextPage = () => {
 
     return (
         <div className="container mx-auto">
-            <Header />
-            <HeadComponent total={total} wrong={wrong} />
-            <CardHolder
-                total={total}
-                wrong={wrong}
-                setTotals={setTotal}
-                setWrongs={setWrong}
-                toggle={toggle}
-            />
-            <Options
-                setTotals={setTotal}
-                setWrongs={setWrong}
-                total={total}
-                wrong={wrong}
-                toggle={toggle}
-                setToggle={setToggle}
-            />
+            <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ y: 0, opacity: 1 }}
+            >
+                <Header />
+                <HeadComponent total={total} wrong={wrong} />
+                <CardHolder
+                    total={total}
+                    wrong={wrong}
+                    setTotals={setTotal}
+                    setWrongs={setWrong}
+                    toggle={toggle}
+                />
+
+                <Options
+                    setTotals={setTotal}
+                    setWrongs={setWrong}
+                    total={total}
+                    wrong={wrong}
+                    toggle={toggle}
+                    setToggle={setToggle}
+                />
+            </motion.div>
         </div>
     );
 };
