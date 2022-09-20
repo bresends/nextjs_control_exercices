@@ -13,7 +13,12 @@ const Home: NextPage = () => {
         <div className="container mx-auto">
             <Header />
             <HeadComponent total={total} wrong={wrong} />
-            <CardHolder total={total} wrong={wrong} setTotals={setTotal}/>
+            <CardHolder
+                total={total}
+                wrong={wrong}
+                setTotals={setTotal}
+                setWrongs={setWrong}
+            />
         </div>
     );
 };

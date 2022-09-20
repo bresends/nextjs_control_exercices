@@ -1,14 +1,14 @@
-import React from 'react';
-import { QuestionProps } from '../types/QuestionProps';
 import { IconContext } from 'react-icons';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { CardHolderProps } from './CardHolder';
 
 const Wrong = (props: CardHolderProps) => {
     const countWrongAnswer = () => {
-        if (props.total === 0 || props.total) {
-            props.setTotals(props.total + 1);
-        }
+        // String to number
+        const total = Number(props.total);
+        const wrong = Number(props.wrong);
+        props.setTotals(total + 1);
+        props.setWrongs(wrong + 1);
     };
 
     return (
