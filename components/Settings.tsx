@@ -17,7 +17,7 @@ const Settings = (props: OptionsProps) => {
                 <BsGear />
             </IconContext.Provider>
             <p className="text-white font-bold text-xl pt-2 select-none">
-                Configurar
+                Layout
             </p>
         </div>
     );
