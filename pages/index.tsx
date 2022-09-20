@@ -1,10 +1,8 @@
 import type { NextPage } from 'next';
 import { useState } from 'react';
+import CardHolder from '../Layouts/CardHolder';
 import HeadComponent from '../components/Head';
 import Header from '../components/Header';
-import CardHolder from '../Layouts/CardHolder';
-import Options from '../Layouts/Options';
-// import Options from '../Layouts/Options';
 
 const Home: NextPage = () => {
     const [total, setTotal] = useState(0);
@@ -21,7 +19,6 @@ const Home: NextPage = () => {
                 setTotals={setTotal}
                 setWrongs={setWrong}
             />
-            <Options setTotals={setTotal} setWrongs={setWrong} />
         </div>
     );
 };
