@@ -10,7 +10,7 @@ const Reset = (props: CardHolderProps) => {
 
     return (
         <div
-            className="group bg-red-500 flex flex-col items-center w-1/3 p-6 shadow-card hover:bg-red-400 transition ease-out duration-250"
+            className="group bg-red-500 flex flex-col items-center w-1/3 p-6 shadow-card hover:bg-red-400 active:bg-red-500 transition ease-out duration-250"
             onClick={resetAnswer}
         >
             <IconContext.Provider
@@ -21,7 +21,9 @@ const Reset = (props: CardHolderProps) => {
             >
                 <BsArrowRepeat />
             </IconContext.Provider>
-            <p className="text-white font-bold text-xl pt-2">Reset</p>
+            <p className="text-white font-bold text-xl pt-2 select-none">
+                Reset
+            </p>
         </div>
     );
 };
