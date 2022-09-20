@@ -7,7 +7,7 @@ import WrongButton from './WrongButton';
 
 const CardHolder = (props: QuestionProps) => {
     return (
-        <div className="bg-darkIndigo shadow-card mt-10 mx-6">
+        <div className="bg-darkIndigo shadow-card mt-10 mx-6 flex flex-col md:grid md:grid-cols-2">
             <QuestionCard total={props.total} wrong={props.wrong} />
             <ErrorCard total={props.total} wrong={props.wrong} />
             <RightButton total={props.total} wrong={props.wrong} />
