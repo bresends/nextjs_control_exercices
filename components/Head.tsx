@@ -10,7 +10,7 @@ const HeadComponent = (props: QuestionProps) => {
     return (
         <Head>
             <title>{headTitle}</title>
-            <meta name="description" content="Created by bruno Resende" />
+            <meta name="description" content="Created by Bruno Resende" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
     );
