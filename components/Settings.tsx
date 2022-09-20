@@ -3,10 +3,15 @@ import { BsGear } from 'react-icons/bs';
 import { OptionsProps } from './Options';
 
 const Settings = (props: OptionsProps) => {
+    const changeLayout = () => {
+        props.setToggle(!props.toggle);
+        localStorage.setItem('toggle', JSON.stringify(!props.toggle));
+    };
+
     return (
         <div
             className="group bg-rightGreen flex flex-col items-center w-1/3 p-6 shadow-card hover:bg-green-400 active:bg-green-500 transition ease-out duration-250"
-            onClick={() => props.setToggle(!props.toggle)}
+            onClick={changeLayout}
         >
             <IconContext.Provider
                 value={{

@@ -13,11 +13,15 @@ const Home: NextPage = () => {
     useEffect(() => {
         const storageTotal = localStorage.getItem('total');
         const storageWrong = localStorage.getItem('wrong');
+        const layout = localStorage.getItem('toggle');
         if (storageTotal) {
             setTotal(Number(storageTotal));
         }
         if (storageWrong) {
             setWrong(Number(storageWrong));
+        }
+        if (layout) {
+            setToggle(JSON.parse(layout));
         }
     }, []);
 
@@ -31,7 +35,7 @@ const Home: NextPage = () => {
                 setTotals={setTotal}
                 setWrongs={setWrong}
                 toggle={toggle}
-                />
+            />
             <Options
                 setTotals={setTotal}
                 setWrongs={setWrong}
