@@ -6,6 +6,8 @@ const Reset = (props: CardHolderProps) => {
     const resetAnswer = () => {
         props.setTotals(0);
         props.setWrongs(0);
+        localStorage.setItem('total', '0');
+        localStorage.setItem('wrong', '0');
     };
 
     return (

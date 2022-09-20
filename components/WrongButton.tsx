@@ -9,6 +9,8 @@ const Wrong = (props: CardHolderProps) => {
         const wrong = Number(props.wrong);
         props.setTotals(total + 1);
         props.setWrongs(wrong + 1);
+        localStorage.setItem('total', String(total + 1));
+        localStorage.setItem('wrong', String(wrong + 1));
     };
 
     return (

@@ -1,5 +1,3 @@
-import React from 'react';
-import { QuestionProps } from '../types/QuestionProps';
 import { IconContext } from 'react-icons';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 import { CardHolderProps } from './CardHolder';
@@ -9,6 +7,7 @@ const RightButton = (props: CardHolderProps) => {
         // String to number
         const total = Number(props.total);
         props.setTotals(total + 1);
+        localStorage.setItem('total', String(total + 1));
     };
 
     return (
