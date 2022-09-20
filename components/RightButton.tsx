@@ -1,8 +1,6 @@
-import React from 'react';
-import { QuestionProps } from '../types/QuestionProps';
 import { IconContext } from 'react-icons';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
-import { CardHolderProps } from './CardHolder';
+import { CardHolderProps } from '../Layouts/CardHolder';
 
 const RightButton = (props: CardHolderProps) => {
     const countRightAnswer = () => {

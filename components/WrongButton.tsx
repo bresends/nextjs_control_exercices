@@ -1,6 +1,6 @@
 import { IconContext } from 'react-icons';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { CardHolderProps } from './CardHolder';
+import { CardHolderProps } from '../Layouts/CardHolder';
 
 const Wrong = (props: CardHolderProps) => {
     const countWrongAnswer = () => {
