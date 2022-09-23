@@ -28,11 +28,11 @@ const Home: NextPage = () => {
 
     return (
         <div className="container mx-auto">
+            <Header />
             <motion.div
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ y: 0, opacity: 1 }}
             >
-                <Header />
                 <HeadComponent total={total} wrong={wrong} />
                 <CardHolder
                     total={total}

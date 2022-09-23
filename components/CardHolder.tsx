@@ -1,11 +1,10 @@
 import React, { Dispatch } from 'react';
 import { QuestionProps } from '../types/QuestionProps';
 import ErrorCard from './ErrorCard';
-import QuestionCard from './QuestionCard';
 import RightButton from './RightButton';
 import RightCard from './RightCard';
 import WrongButton from './WrongButton';
-import { motion } from 'framer-motion';
+import Card from './Card';
 
 export interface CardHolderProps extends QuestionProps {
     setTotals: Dispatch<React.SetStateAction<number>>;
@@ -16,12 +15,30 @@ export interface CardHolderProps extends QuestionProps {
 const CardHolder = (props: CardHolderProps) => {
     return (
         <div className="bg-darkIndigo shadow-card mt-10 mx-6 flex flex-col md:grid md:grid-cols-2">
-            <QuestionCard total={props.total} wrong={props.wrong} />
+            <Card
+                color="green"
+                display={props.total}
+                title="Questões"
+                total={props.total}
+                wrong={props.wrong}
+            />
 
             {props.toggle ? (
-                <ErrorCard wrong={props.wrong} total={props.total} />
+                <Card
+                    color="red"
+                    display={props.wrong}
+                    title="Erros"
+                    total={props.total}
+                    wrong={props.wrong}
+                />
             ) : (
-                <RightCard total={props.total} wrong={props.wrong} />
+                <Card
+                    color="red"
+                    display={props.wrong}
+                    title="Acertos"
+                    total={props.total}
+                    wrong={props.wrong}
+                />
             )}
 
             <RightButton
