@@ -18,7 +18,7 @@ const RightButton = (props: CardHolderProps) => {
             <IconContext.Provider
                 value={{
                     className:
-                        'text-rightGreen w-full text-4xl my-5 transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 xl:text-6xl md:text-6xl md:my-8',
+                        'text-rightGreen w-full text-4xl my-7 transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 xl:text-6xl md:text-6xl md:my-8',
                 }}
             >
                 <AiOutlineCheckCircle />

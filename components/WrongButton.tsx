@@ -21,7 +21,7 @@ const Wrong = (props: CardHolderProps) => {
             <IconContext.Provider
                 value={{
                     className:
-                        'text-wrongRed text-4xl w-full my-5 transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 md:text-6xl md:my-8',
+                        'text-wrongRed text-4xl w-full my-7 transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 md:text-6xl md:my-8',
                 }}
             >
                 <AiOutlineCloseCircle />
