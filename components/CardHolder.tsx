@@ -12,7 +12,7 @@ export interface CardHolderProps extends QuestionProps {
 
 const CardHolder = (props: CardHolderProps) => {
     return (
-        <div className="bg-darkIndigo shadow-card mt-10 mx-auto flex flex-col md:grid md:grid-cols-2 xl:w-2/3 lg:min-h-[40vh]">
+        <div className="bg-darkIndigo shadow-card mt-10 mx-auto w-11/12 flex flex-col md:grid md:grid-cols-2 xl:w-2/3 lg:min-h-[40vh]">
             <Card
                 color="green"
                 display={props.total}
