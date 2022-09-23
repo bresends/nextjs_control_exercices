@@ -27,7 +27,7 @@ const Home: NextPage = () => {
     }, []);
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto flex flex-col">
             <Header />
             <motion.div
                 initial={{ opacity: 0, y: -100 }}
