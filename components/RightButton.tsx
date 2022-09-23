@@ -13,12 +13,12 @@ const RightButton = (props: CardHolderProps) => {
     return (
         <div
             onClick={countRightAnswer}
-            className="group flex flex-col justify-center border-lightGray/10 border-b-[1px] md:border-r-[1px] md:border-b-0 hover:bg-lightIndigo transition ease-out duration-250"
+            className="group flex justify-center border-lightGray/10 border-b-[1px] md:border-r-[1px] md:border-b-0 hover:bg-lightIndigo transition ease-out duration-250"
         >
             <IconContext.Provider
                 value={{
                     className:
-                        'text-rightGreen w-full text-4xl my-5 transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 xl:text-7xl md:text-6xl md:my-8',
+                        'text-rightGreen w-full text-4xl my-5 transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 xl:text-6xl md:text-6xl md:my-8',
                 }}
             >
                 <AiOutlineCheckCircle />
