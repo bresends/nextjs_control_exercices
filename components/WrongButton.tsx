@@ -15,13 +15,13 @@ const Wrong = (props: CardHolderProps) => {
 
     return (
         <div
-            className="group flex justify-center py-8 md:py-14 xl:py-20 hover:bg-lightIndigo transition ease-out duration-250"
+            className="group flex justify-center py-8 hover:bg-lightIndigo transition ease-out duration-250"
             onClick={countWrongAnswer}
         >
             <IconContext.Provider
                 value={{
                     className:
-                        'text-wrongRed text-5xl transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 md:text-7xl',
+                        'text-wrongRed text-5xl transform group-hover:scale-110 group-active:scale-90 transition ease-out duration-250 xl:text-7xl',
                 }}
             >
                 <AiOutlineCloseCircle />

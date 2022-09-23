@@ -1,10 +1,8 @@
 import React, { Dispatch } from 'react';
 import { QuestionProps } from '../types/QuestionProps';
-import ErrorCard from './ErrorCard';
-import RightButton from './RightButton';
-import RightCard from './RightCard';
-import WrongButton from './WrongButton';
 import Card from './Card';
+import RightButton from './RightButton';
+import WrongButton from './WrongButton';
 
 export interface CardHolderProps extends QuestionProps {
     setTotals: Dispatch<React.SetStateAction<number>>;

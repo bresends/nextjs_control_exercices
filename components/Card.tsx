@@ -18,7 +18,7 @@ const Card = (props: CardProps) => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ y: 0, opacity: 1 }}
             >
-                <p className={`${color} font-bold`}>{props.display}</p>
+                <p className={`${color} font-bold pb-8 text-6xl xl:text-[96px]`}>{props.display}</p>
             </motion.div>
         </div>
     );
